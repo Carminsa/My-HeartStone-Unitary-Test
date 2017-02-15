@@ -56,7 +56,7 @@ describe('Class Deck', function (){
 
     describe('getCardsCount', function () {
         it('nombre de carte restant', function() {
-            expect(models.getCardsCount()).toEqual(jasmine.any(Number));
+            expect(model.getCardsCount()).toEqual(jasmine.any(Number));
         })
     })
 
