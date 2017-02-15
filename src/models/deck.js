@@ -29,6 +29,18 @@ export default class Deck {
         }
     }
 
+    insertAt(cards, position){
+
+        this.cards.splice(position, 0, cards);
+        return true;
+    }
+
+
+
+    toto(cards, position){
+
+    }
+
     getCardsCount () {
     }
 }
