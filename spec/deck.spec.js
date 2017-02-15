@@ -20,9 +20,19 @@ describe('Class Deck', function (){
         });
     });
 
+    describe('Draw', function(){
+        it('Vérifie si l attribut est un objet', function () {
+            expect(models.draw()).toEqual(jasmine.any(Object));
+        });
+
+        it('Verifie si array vide', function () {
+            expect(models.draw()).not.toBe(undefined);
+        });
+    });
+
     describe('shuffle', function(){
-        it('Mélange les cardes du paquet', function () {
-            models.shuffle();
+        it('Vérifie si l attribut est un objet', function () {
+            expect(models.draw()).toEqual(jasmine.any(Object));
         });
     });
 
