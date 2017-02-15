@@ -14,9 +14,8 @@ export default class Deck {
             this.cards[j] = this.cards[i];
             this.cards[i] = temp;
         }
-       return;
+        return;
     }
-
 
     draw (){
         if (Array.isArray(this.cards)){
@@ -35,12 +34,9 @@ export default class Deck {
         return true;
     }
 
-
-
-    toto(cards, position){
-
-    }
-
-    getCardsCount () {
+    getCardsCount() {
+        if (Array.isArray(this.cards)) {
+            return this.cards.length;
+        }
     }
 }
