@@ -5,4 +5,16 @@ export default class Hand{
         this.limit = 7;
     }
 
+    addCart(card){
+
+        var count = Object.keys(this.cards).length;
+
+        if (count < this.limit){
+            this.cards.splice(count+1, 0, card);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

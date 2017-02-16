@@ -21,4 +21,13 @@ describe('Class Hand', function(){
           expect(Array.isArray(cards.cards)).toBe(true);
       });
    });
+
+   describe('AddCart', function(){
+      it('La fonction renvoie True si la carte s ajoute', function(){
+          expect(model.addCart({"face":"card-BITE"})).toBe(true);
+      });
+      it('la fonction renvoie False si la limite est atteinte', function(){
+          expect(model.addCart({"face":"card-BITE"})).toBe(false);
+      });
+   });
 });
