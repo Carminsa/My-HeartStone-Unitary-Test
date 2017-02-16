@@ -24,11 +24,20 @@ export default class Hand{
         this.cards.splice(position-1, 1);
 
         if (count -1 == Object.keys(this.cards).length){
-            // console.log(this.cards);
             return true;
         }else {
             return false;
         }
+    }
+
+    getAllCards(){
+        return this.cards;
+    }
+
+
+    getCardsCount(){
+        var count = Object.keys(this.cards).length;
+        return count;
     }
 
 }

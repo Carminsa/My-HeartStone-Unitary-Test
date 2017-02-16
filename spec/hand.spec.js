@@ -39,4 +39,17 @@ describe('Class Hand', function(){
             expect(model.removeCard(9)).toBeFalsy();
         });
     });
+
+    describe('getAllCards', function () {
+        it('retourne un tableau', function() {
+            expect(Array.isArray(model.getAllCards())).toBe(true);
+            // expect(model.getAllCards());
+        })
+    });
+
+    describe('countAllCards', function () {
+        it('retourne le nombre de carte dans la main', function() {
+            expect(model.getCardsCount()).toEqual(jasmine.any(Number));
+        });
+    });
 });
