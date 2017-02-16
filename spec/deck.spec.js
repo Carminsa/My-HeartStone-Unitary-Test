@@ -58,6 +58,5 @@ describe('Class Deck', function (){
         it('nombre de carte restant', function() {
             expect(model.getCardsCount()).toEqual(jasmine.any(Number));
         })
-    })
-
+    });
 });
