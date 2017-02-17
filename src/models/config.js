@@ -3,6 +3,7 @@ import DeckModel from './deck';
 import PlayerModel from './player';
 import HandModel from './hand';
 import PawnModel  from './pawn';
+import CemetaryModel  from './cemetary';
 
 export default {
     "game": {
@@ -24,5 +25,9 @@ export default {
     "pawn": {
         "class": PawnModel,
         "param": '{"life" : 1, "strength" : 3, "def" : 2}'
+    },
+    "cemetary": {
+        "class": CemetaryModel,
+        "param": '{"cards" : []}'
     }
 }

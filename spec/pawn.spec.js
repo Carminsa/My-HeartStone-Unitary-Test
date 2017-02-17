@@ -25,4 +25,10 @@ describe('Class Pawn', function()
             expect(model.getStrength()).toEqual(jasmine.any(Number));
         });
     });
+
+    describe('Receive attack', function(){
+       it('Retourne true quand attaque et false quand contre attaque', function(){
+          expect(model.recieveAttack(model2)).toMatch(/true|false/);
+       });
+    });
 });
