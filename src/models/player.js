@@ -10,7 +10,7 @@ export default class Player extends Pawn {
         this.deck = ModelFactory.get('deck');
         this.cards = this.deck.cards;
 
-        this.board = ModelFactory.get('board');
+        // this.board = ModelFactory.get('board');
         this.hand = ModelFactory.get('hand');
         this.cemetary = ModelFactory.get('cemetary');
     }

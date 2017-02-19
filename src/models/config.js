@@ -8,7 +8,7 @@ import CemetaryModel  from './cemetary';
 export default {
     "game": {
         "class": GameModel,
-        "param": '{}'
+        "param": '{"up": "up", "down": "down"}'
     },
     "deck": {
         "class": DeckModel,
